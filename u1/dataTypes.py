@@ -123,8 +123,16 @@ print(j.index(1))
 
 
 '''
-Sets 
+Sets
 - No tienen indices ni indices negativos
 - No se pueden agregar elementos repetidos
 '''
+s1 = {1,2,3,4,5}
+s2 = {4,5,6,7,8}
+print(s1.union(s2))
 
+for i in s1:
+    print(i)
+    
+print(3 in s1)
+print(3 in s2)
