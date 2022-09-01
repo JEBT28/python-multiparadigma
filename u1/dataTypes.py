@@ -134,5 +134,7 @@ print(s1.union(s2))
 for i in s1:
     print(i)
     
+    
 print(3 in s1)
 print(3 in s2)
+
