@@ -122,6 +122,8 @@ print(j)
 print(j.index(1))
 
 
+
+
 '''
 Sets
 - No tienen indices ni indices negativos
@@ -138,3 +140,65 @@ for i in s1:
 print(3 in s1)
 print(3 in s2)
 
+#Add agregar un elemento a un set
+s1.add(6)
+print(s1)
+
+#Remove elimina un elemento del set pero si no existe regresa un error
+s1.remove(5)
+print(s1)
+#Discard elimina un elemento del set pero si no existe no regresa un error
+s1.discard(6)
+print(s1)
+#Pop elimina aleatoriamente un elemento del set
+s1.pop()
+print(s1)
+
+#Intersection regresa los elementos que se encuentran en ambos sets
+s3=s1.intersection(s2)
+print(s3)
+
+
+'''
+Diccionarios
+- La llave debe ser unica
+- No se puede agregar una llave que ya existe
+'''
+
+d1 = {"nombre":"Juan","apellido":"Perez","edad":20}
+
+
+for key,value in d1.items():
+    print(key,value) 
+
+
+
+#Escribir un programa que contenga una función que reciba n parámetros de tipo numérico y calcule el
+#producto total.
+
+def producto(*args):
+    total = 0
+    for i in args:
+        total += i
+    return total
+
+total = producto(1,2,3,4,5,6,7,8,9,10)
+print(total)
+
+
+'''Escribir un programa que almacene el abecedario en una lista, elimine de la lista las letras que ocupen
+posiciones múltiplos de 3, y muestre por pantalla la lista resultante.'''
+
+abecedario = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
+def eliminarMultiplos(lista):
+    aux= []
+    for i in range(0,len(lista)-1):
+        if ((i + 1) % 3) != 0:
+            aux.append(lista[i])
+    return aux
+
+
+resultado = eliminarMultiplos(abecedario)
+
+print(resultado)
