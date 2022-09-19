@@ -31,8 +31,6 @@ if opcionPizza == 'NV':
 print(f'Pizza elegida {opcionPizza}, ingredientes: {", ".join(ingredientes)} ')
 
 
-
-
 #Escribir un programa en el que se pregunte al usuario por una frase y una letra
 # y mostrar en pantalla el numero de veces que se repite la letra
 
@@ -64,3 +62,5 @@ matrizB = ((-1,0),(0,1),(1,1))
 
 matrizResultante = productoMatrices(matrizA,matrizB)
 [print(tupla) for tupla in matrizResultante]
+
+
